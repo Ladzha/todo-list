@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root{
+  --first-color: #64CCC5;
+  --second-color: #053B50; 
+  --third-color: #176B87;
+  --white-color: #fff;
+  --transparent-white-color: rgba(255, 255, 255, 0.5);
+
+  --border: 1px dotted var(--first-color);
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: var(--white-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.todoWrapper {
+  background: var(--third-color);
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.todoForm {
+  width: 100%;
+}
+
+.todoInput {
+  outline: none;
+  background: none;
+  border: var(--border);
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  color: var(--white-color);
+}
+
+.todoInput::placeholder {
+  color: var(--transparent-white-color);
+}
+
+.todoButton {
+  background: transparent;
+  margin-left: 3px;
+  color: var(--white-color);
+  border: var(--border);
+  padding: 0.75rem;
+  cursor: pointer; 
+}
+
+.todoButton:hover {
+  background: rgba(0, 0, 0, 0.15);
+  margin-left: 3px;
+  color: var(--white-color);
+  border: var(--border);
+  padding: 0.75rem;
+  cursor: pointer; 
+}
+
+.todoButton:active {
+  background: rgba(0, 0, 0, 0.4);
+  margin-left: 3px;
+  color: var(--white-color);
+  border: var(--border);
+  padding: 0.75rem;
+  cursor: pointer; 
+}
+
+.elementTodoList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--border);
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white-color);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.icon {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: var(--third-color);
+  text-decoration: line-through;
+}
